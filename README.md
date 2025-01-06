@@ -122,6 +122,8 @@ This project is a feature-rich desktop application developed using PyQt5. It int
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
+## License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) 
 
 ## Contact
 For inquiries, please contact:
