@@ -1,0 +1,435 @@
+/* 
+Midnight Blue
+#41729f
+
+Blue Gray
+#5885af
+
+Dark Blue
+#274472
+
+Baby Blue
+#c3e0e5 */
+QMainWindow {
+    background-color: #f4f4f4;  /* Keep the window's background light gray */
+    /* background-color: #adb0b1; */
+
+}
+/* QFrame#stacked_widget{
+    background-image: url('py/static/media/ground.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+} */
+QStackedWidget {
+    border: 1px solid #3498db;
+    background-color: #ffffff;
+    /* background-image: url('py/static/media/ground.png'); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size:auto; */
+}
+
+/* Header */
+QFrame#header {
+    background-color: #274472;
+    color: white;
+    padding: 10px;
+}
+
+#sidebar {
+    background-color: #274472;
+    min-width: 200px;
+    border-right: 1px solid #bdc3c7;
+    padding: 10px;
+}
+
+
+QFrame#footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* General Style for the Window */
+QWidget {
+    /* background-color: #4d4b4b;  Light gray background for the entire window */
+    font-family: 'Arial', sans-serif;  /* Set font family */
+    font-size: 12pt;  /* Set font size for readability */
+    /* margin: auto; */
+    background-color: #f4f4f4;
+
+}
+QDialog {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 300px;
+    height: 400px;
+}
+
+QDialog#registerDialog {
+    width: 350px;
+    height: 450px;
+}
+
+
+/* Style for Layouts (QVBoxLayout, QHBoxLayout) */
+QVBoxLayout, QHBoxLayout {
+    spacing: 10px;  /* Add spacing between items in the layout */
+    margin: 10px;  /* Add margin around the layout */
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+/* Style for Labels (Text) */
+
+/* #label {
+    font-size: 16px;
+    color: #2c3e50;
+    margin: 10px;
+} */
+
+QLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    /* width:100px; */
+    padding: 5px;       
+    margin: 10px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    border-radius: 5px;           /* حواف مستديرة */
+    /* border: 1px solid #ccc;   */
+}
+
+
+/* Result display label (for errors or results) */
+QLabel#result_display {
+
+    font-size: 12pt;
+    font-weight: bold;
+    color: #e74c3c;  /* Red color for error or result text */
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+    padding: 10px 20px;
+    background-color: rgb(226, 231, 230);
+}
+
+QLineEdit  {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #333333;
+    /* min-height: 20px;
+    min-width: 50px; */
+
+}
+
+QLineEdit:focus {
+    border: 1px solid #41729f;
+    background-color: #ffffff;
+}
+
+QDateEdit {
+    background-color: #f0f0f0;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #0078d4;
+    
+}
+QDateEdit::down-arrow {
+    image: url(./py/static/media/down-chevron.png);  /* مسار الصورة */
+    width: 12px;  /* عرض السهم */
+    height: 12px;  /* ارتفاع السهم */
+}
+QDateEdit::drop-down {
+    width: 20px;  /* عرض القائمة المنسدلة */
+    border-left: 1px solid #c0c0c0;
+}
+
+
+QCalendarWidget QWidget {
+    background-color: #ffffff;  /* لون الخلفية */
+    color: #000000;  /* لون النص */
+}
+QCalendarWidget QAbstractItemView:enabled {
+    font-size: 14px;  /* حجم الخط */
+    color: #333333;  /* لون النص */
+    background-color: #f9f9f9;  /* لون الخلفية */
+    selection-background-color: #41729f;  /* خلفية العنصر المحدد */
+    selection-color: #ffffff;  /* لون النص للعنصر المحدد */
+}
+QCalendarWidget QAbstractItemView:disabled {
+    color: #cccccc;  /* لون النص للعناصر غير النشطة */
+}
+QCalendarWidget QToolButton {
+    color: #ffffff;  /* لون النص للأزرار */
+    background-color: #41729f;  /* لون الخلفية للأزرار */
+    border: none;  /* إزالة الحدود */
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;  /* زوايا مستديرة */
+}
+QCalendarWidget QToolButton:hover {
+    background-color: #005a9e;  /* تغيير لون الخلفية عند التمرير */
+}
+QCalendarWidget QToolButton::menu-indicator {
+    image: none;  /* إخفاء مؤشر القائمة */
+}
+
+QPushButton {
+    background-color: #274472;
+    color: white;
+
+    border: 1px solid #274472;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: left;
+    /* margin-top: 5px; */
+    /* cursor:pointing-hand; */
+}
+QPushButton#cotact_lens{
+    padding:10 50px;
+    
+
+}
+/* تغيير لون الأزرار عند التمرير */
+QPushButton:hover {
+    
+     background-color: #41729f
+}
+
+/* تنسيق الأزرار بعد التركيز */
+QPushButton:focus {
+    background-color:#41729f;
+    border: 1px solid #c3e0e5;
+    outline: none;
+}
+QPushButton:pressed {
+    background-color: #41729f; /* اللون عند الضغط */
+}
+
+
+/* إضافة مسافة بين العناصر */
+QLabel, QLineEdit, QPushButton,QComboBox ,QDateEdit{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+QCheckBox {
+    font-size: 14px;  /* تغيير حجم الخط */
+    color: #333;     
+    spacing: 5px; 
+
+}
+QCheckBox:checked {
+    color: #0078d4;  /* تغيير لون النص عند تحديد الـ checkbox */
+    font-weight: bold;  /* جعل النص عريض عند التحديد */
+}
+
+QCheckBox:!checked {
+    color: #888;      /* تغيير لون النص عند عدم تحديد الـ checkbox */
+}
+
+QCheckBox::indicator {
+    width: 18px;      /* عرض مربع الاختيار */
+    height: 18px;     /* ارتفاع مربع الاختيار */
+    border: 2px solid #0078d4; /* تحديد حدود المربع */
+    border-radius: 3px;  /* جعل المربع دائريًا */
+    background-color: #fff; /* لون الخلفية عند عدم التحديد */
+}
+
+QCheckBox::indicator:checked {
+    background-color: #0078d4;  /* لون الخلفية عند التحديد */
+    border-color: #0078d4;      /* تغيير لون الحدود عند التحديد */
+    image: url('./py/static/media/check_icon.png'); /* يمكنك إضافة أي صورة مثل علامة صح */
+}
+
+
+QTableWidget {
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 14px;
+    gridline-color: #dfe6e9;
+}
+
+QTableWidget::item {
+    padding: 10px;
+    min-width: 100px; /* الحد الأدنى لعرض الخلية */
+    min-height: 30px; /* الحد الأدنى لارتفاع الخلية */
+    text-align: center;
+    margin: 0px;
+}
+QTableWidget#OrderTable::item{
+    margin: 0px;
+
+   padding: 0px;
+}
+
+QTableWidget#OrderTable QPushButton {
+    /* background-color: #4CAF50;
+    color: white; */
+    border: none;
+    padding: 5px;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+
+
+QTableWidget::item:hover {
+    background-color: #e0e0e0;
+}
+QTableWidget::item:selected {
+    background-color: #c3e0e5; /* خلفية محددة واضحة */
+    color: #000000; /* لون النص المحدد */
+}
+
+QTableWidget::item:alternate {
+    background-color: #f2f2f2;
+}
+
+
+QTableWidget QTableCornerButton::section {
+    background-color: #5885af;
+}
+
+
+QTableWidget::horizontalHeader {
+    background-color: #5885af;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+QTableWidget::verticalHeader {
+    background-color: #5885af;
+    color: white;
+}
+
+QHeaderView::section {
+    padding: 5px;
+    font-size: 12px;
+    background-color: #274472;
+    color: white;
+    border: none;
+}
+
+QTableWidget::item:focus {
+    padding: 1px; /* مسافة داخل الخلية */
+    background-color: #ffffff; /* خلفية واضحة أثناء التعديل */
+    border: 1px solid #5885af; /* تحديد أثناء التعديل */
+    min-height: 70px; /* الحد الأدنى لارتفاع الخلية */
+    min-width: 100px; /* الحد الأدنى لعرض الخلية */
+}
+
+QTableWidget::edit {
+    background-color: #ffffff; /* خلفية واضحة أثناء التحرير */
+    border: 1px solid #dfe6e9;
+    padding: 5px;
+    min-height: 30px;
+    min-width: 100px;
+}
+QTableWidget QLineEdit {
+    min-height: 20px;
+}
+
+/* QTableWidget QPushButton{
+    background-color: #c3e0e5;
+    padding: 5px;
+} */
+
+QMessageBox {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    border: 1px solid #c3e0e5;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;  /* تحديد عرض محدد */
+    height: 150px;  /* تحديد ارتفاع محدد */
+}
+
+QMessageBox QLabel {
+    color: #333333;
+    width: auto;
+}
+
+QMessageBox QPushButton {
+    background-color: #274472;
+    color: white;
+    border: 1px solid #41729f;
+    padding: 10px;
+}
+
+
+QMessageBox QPushButton:hover {
+    background-color: #41729f;
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: #41729f;
+}
+
+QMessageBox QIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #333333;
+}
+QComboBox:hover {
+    border-color: #5885af;
+    background-color: #f9f9f9;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px;
+    border-left: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+QComboBox::down-arrow {
+    image: url(./py/static/media/down-chevron.png);
+    width: 12px;
+    height: 12px;
+}
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    selection-background-color: #5885af;
+    selection-color: #ffffff;
+    font-size: 14px;
+    color: #333333;
+}
+QComboBox QAbstractItemView::item {
+    height: 30px;
+    padding-left: 10px;
+}
+QComboBox QAbstractItemView::item:hover {
+    background-color: #e0eaff;
+    color: #333333;
+}
